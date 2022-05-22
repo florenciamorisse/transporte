@@ -1,0 +1,32 @@
+
+<div class="container">
+    <h4 style="text-align: center; margin: 20px;">Agregar una nueva novedad</h4>
+    <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">       
+        
+        <div class="mb-3">        
+            <input type="text" class="form-control" placeholder="titulo" name="titulo">
+        </div>
+   
+        <div class="mb-3">        
+            <input type="text" class="form-control" placeholder="subtitulo" name="subtitulo">
+        </div> 
+        <div class="mb-3">
+            <label>Imagen:<input type="file" name="imagen" id="imagen"/></label>
+        </div>  
+      
+        <textarea type="text" class="form-control" rows="3" placeholder="cuerpo" name="cuerpo"></textarea>
+        <br>
+
+        <div class="mb-3">
+            <button
+              class="btn btn-info"
+              style="background-color:#2e64a1;"
+              type="submit"
+            >Guardar</button>
+        </div>
+    
+    </form>
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+</div>

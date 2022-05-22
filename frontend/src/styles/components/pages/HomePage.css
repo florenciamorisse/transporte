@@ -1,0 +1,27 @@
+.homeimg {
+    margin-bottom: 1.5em;
+  }
+  
+  /* .bienvenido,
+  .testimonios {
+    box-sizing: border-box;
+  } */
+  .bienvenidos {
+    width: 75%;
+    padding-right: 2em;
+  }
+  .testimonios {
+    width: 25%;
+  }
+  .testimonio {
+    background-color: #ccc;
+    padding: 1em;
+    margin-bottom: 25px;
+
+  }
+  .testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+  }
