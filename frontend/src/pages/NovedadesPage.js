@@ -1,10 +1,10 @@
-import '../styles/components/pages/NovedadesPage.css';
+
 
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import NovedadItem from '../components/novedades/NovedadItem';
 
-
+import '../styles/components/pages/NovedadesPage.css';
 
 
 
@@ -28,8 +28,8 @@ const NovedadesPage =(props)=>{
             {loading ?(
                 <p>Cargando...</p>
             ):(
-                novedades.map(item=><NovedadItem key={item.id}
-                    title={item.titulo} subtitle={item.subtitulo} imagem={item.imagen} body={item.imagen}/>)
+                novedades.map(item=> <NovedadItem key={item.id}
+                    title={item.titulo} subtitle={item.subtitulo} imagen={item.imagen} body={item.cuerpo}/>)
 
             )}
         </section>

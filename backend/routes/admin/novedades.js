@@ -14,7 +14,7 @@ var destroy = util.promisify(cloudinary.uploader.destroy);
 /* GET home page. */
 router.get('/', async function(req, res, next) {
 
-  var novedades=await novedadesModel.getNovedades();
+  var novedades = await novedadesModel.getNovedades();
 
   novedades = novedades.map(novedad =>{
     if (novedad.img_id){
@@ -57,7 +57,7 @@ router.post('/agregar', async(req,res, next)=>{
       img_id = (await uploader(imagen.tempFilePath)).public_id;
     }
 
-    if(req.body.titulo !="" && req.body.subtitulo !="" && req.body.cuerpo !=""){
+    if(req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
 
         await novedadesModel.insertNovedad({
 
