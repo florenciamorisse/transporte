@@ -32,7 +32,7 @@ router.get('/novedades', async function (req, res, next){
 
 
 
-router.post('/conatcto', async (req, res)=>{
+router.post('/contacto', async (req, res)=>{
     const mail= {
         to: 'florenciamorisse@gmail.com',
         subject: 'Contacto Web',

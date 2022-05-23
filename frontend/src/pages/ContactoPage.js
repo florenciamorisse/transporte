@@ -1,5 +1,5 @@
 import '../styles/components/pages/ContactoPage.css';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const ContactoPage =(props)=>{
